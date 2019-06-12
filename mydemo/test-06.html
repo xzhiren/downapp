@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .outer{
+            width:90%;
+            margin:20px auto;
+        }
+        .inner{
+            border:1px solid #ccc;
+            display: flex;
+            flex-wrap:wrap;
+            height:800px;
+
+        }
+        .inner1{
+            align-content: flex-start;
+        }
+        .inner2{
+            align-content:center;
+        }
+        .inner3{
+            align-content: flex-end;
+        }
+        .inner4{
+            align-content: space-between;
+        }
+        .inner5{
+            align-content: space-around;
+        }
+        .inner6{
+            align-content: stretch;
+        }
+        .items{
+            list-style-type: none;
+            /*flex-direction: column;*/
+            display: flex;
+            text-align: center;
+            color:#fff;
+            font-size:30px;
+            line-height:100px;
+        }
+        .item{
+            width:100px;
+            height:100px;
+            margin:10px;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+<div class="outer">
+    <h2>align-content:flex-start</h2>
+    <div class="inner inner1">
+    <ul class="items items1">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+    <ul class="items items2">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+    </ul>
+    <ul class="items items3">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+    </ul>
+    </div>
+</div>
+<div class="outer">
+    <h2>align-content:center</h2>
+    <div class="inner inner2">
+    <ul class="items items1">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+    <ul class="items items2">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+    </ul>
+    <ul class="items items3">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+    </ul>
+    </div>
+</div>
+<div class="outer">
+    <h2>align-content:flex-end</h2>
+    <div class="inner inner3">
+    <ul class="items items1">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+    <ul class="items items2">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+    </ul>
+    <ul class="items items3">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+    </ul>
+    </div>
+</div>
+<div class="outer">
+    <h2>align-content:space-between</h2>
+    <div class="inner inner4">
+    <ul class="items items1">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+    <ul class="items items2">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+    </ul>
+    <ul class="items items3">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+    </ul>
+    </div>
+</div>
+<div class="outer">
+    <h2>align-content:space-around</h2>
+    <div class="inner inner5">
+    <ul class="items items1">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+    <ul class="items items2">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+    </ul>
+    <ul class="items items3">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+    </ul>
+    </div>
+</div>
+<div class="outer">
+    <h2>align-content:stretch</h2>
+    <div class="inner inner6">
+    <ul class="items items1">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+    <ul class="items items2">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+    </ul>
+    <ul class="items items3">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+    </ul>
+    </div>
+</div>
+
+</body>
+</html>

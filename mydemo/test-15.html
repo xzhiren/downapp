@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            position:relative;
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        .inner{
+            position:absolute;
+            bottom:-1px;
+            width: 200px;
+
+            /*height: 100px;*/
+            background-color: #ff6700;
+            height:0;
+            opacity: 0;
+            transition: height 5s;
+        }
+        .box:hover .inner{
+            height:100px;
+            opacity: 1;
+        }
+
+        /*.dv{*/
+            /*width:200px;*/
+            /*height: 100px;*/
+            /*border: 1px solid #333;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner">hahhahahah</div>
+    </div>
+    <!--<div class="dv">lalallalalalla</div>-->
+</body>
+</html>

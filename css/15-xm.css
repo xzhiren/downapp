@@ -1,0 +1,150 @@
+.site-topbar {
+    position: relative;
+    z-index: 30;
+    height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #333;
+}
+.container {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.site-topbar .topbar-nav {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.site-topbar .topbar-cart {
+    width: 120px;
+    margin-left: 15px;
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.site-topbar .topbar-info {
+    line-height: 40px;
+    position: relative;
+    float: right;
+    height: 40px;
+}
+.topbar-nav a,.topbar-cart a ,.topbar-info a{
+    color:#b0b0b0;
+    font-size:12px;
+}
+.topbar-nav a:hover,.topbar-cart a:hover ,.topbar-info a:hover{
+    color:#fff;
+}
+.site-topbar .sep {
+    margin: 0 .3em;
+    color: #424242;
+}
+.site-topbar .cart-mini {
+    position: relative;
+    z-index: 32;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/font-3/iconfont.eot');
+    src: url('../fonts/font-3/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/font-3/iconfont.woff2') format('woff2'),
+    url('../fonts/font-3/iconfont.woff') format('woff'),
+    url('../fonts/font-3/iconfont.ttf') format('truetype'),
+    url('../fonts/font-3/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.site-topbar .cart-mini i {
+    margin-right: 4px;
+    font-size: 18px;
+    line-height: 20px;
+    vertical-align: -3px;
+}
+.down-app{
+    position:relative;
+
+}
+.down-app .box{
+    width: 124px;
+    position: absolute;
+    top: 28px; left: 50%;
+    padding: 18px 0px 14px;
+    background: rgb(255, 255, 255);
+    margin-left: -55px;
+    box-shadow: rgb(170, 170, 170) 0px 1px 5px;
+    display: none;
+}
+
+.square{
+    position:absolute;
+    top:-10px;
+    left:50px;
+    width:0;
+    height:0;
+    border-width:0 10px 10px;
+    border-style:solid;
+    border-color:transparent transparent #fff;/*透明 透明  灰*/
+
+}
+.down-app .box img{
+    display:block;
+    margin: 0 auto;
+}
+.down-app .box span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    margin-top: 14px;
+}
+.down-app:hover .box{
+    display: block;
+}
+.clearfix{
+    clear:both;
+}
+.site-topbar .cart-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 31;
+    width: 316px;
+    padding: 15px 0 0;
+    color: #424242;
+    background: #fff;
+    border: 1px solid #e0e0e0 ;
+    border-top: 0 ;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.site-topbar .cart-menu .loading {
+    margin: 5px 20px 20px;
+    text-align: center;
+}
+.loading {
+    padding: 20px 0;
+}
+.topbar-cart:hover .cart-menu{
+    display: block;
+}
+.topbar-cart:hover .cart-mini{
+    color:#ff6700;
+    background-color: #fff;
+}

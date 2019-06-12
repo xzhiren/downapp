@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .outer{
+            width:90%;
+            margin:20px auto;
+        }
+        .items{
+            list-style-type: none;
+            border:1px solid #ccc;
+            display: flex;
+            text-align: center;
+            color:#fff;
+            font-size:30px;
+            line-height:100px;
+        }
+        .item{
+            width:100px;
+            height:100px;
+            margin:10px;
+            background-color: pink;
+        }
+        .items1{
+            justify-content:flex-start;
+        }
+        .items2{
+            justify-content: center;
+        }
+        .items3{
+            justify-content: flex-end;
+        }
+        .items4{
+            justify-content: space-between;
+        }
+        .items5{
+            justify-content: space-around;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="outer">
+    <h2>justify-content:flex-start</h2>
+    <ul class="items items1">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+</div>
+<div class="outer">
+    <h2>justify-content:center</h2>
+    <ul class="items items2">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+</div>
+<div class="outer">
+    <h2>justify-content:flex-end</h2>
+    <ul class="items items3">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+</div>
+<div class="outer">
+    <h2>justify-content:space-between</h2>
+    <ul class="items items4">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+</div>
+<div class="outer">
+    <h2>justify-content:space-around</h2>
+    <ul class="items items5">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
+</div>
+</body>
+</html>

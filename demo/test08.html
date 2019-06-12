@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #33ccff;
+            margin:200px auto;
+            /*animation: move1 1s;*/
+            animation:move2 4s;
+        }
+        @keyframes move1 {
+            from{transform: translate(0,0)}
+            to{transform: translate(100px,100px)}
+        }
+        @keyframes move2 {
+            0%{transform: translate(0,0)}
+            25%{
+                transform: translate(100px,100px);
+                background-color:#ff6600;
+                }
+             50%{
+                 transform: translate(200px,200px);
+                 background-color:#ff6600;
+             }
+             75%{
+                 transform: translate(100px,100px);
+                 background-color:#ff6600;
+             }
+             100%{
+                transform: translate(0,0);
+                 background-color: #33ccff;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
